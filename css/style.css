@@ -1,0 +1,59 @@
+.container {
+    max-width: 940px;
+    margin: auto;
+}
+
+header {
+    min-height: 137px;
+    padding: 35px 0;
+    background: linear-gradient(#d5d5d5, #fff, #fff, #fff, #fff);
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+    font: .68em Tahoma;
+    color: #b7b7b7;
+    padding: 5px 0;
+}
+
+nav ul li a {
+    font: bold .87rem Georgia;
+    color: #666;
+    display: block;
+    text-transform: uppercase;
+}
+
+nav>a img {
+    width: 25%;
+}
+
+main {
+    height: 1280px;
+    background: #fff url("../img/bg.jpg") repeat-x;
+}
+
+footer {
+    height: 173px;
+    border-top: 10px solid #4c4c4c;
+    background-color: #333;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        text-align: inherit;
+    }
+
+    nav ul {
+        float: right;
+        padding-top: 22px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        border-left: 1px dotted #d6d6d6;
+        padding: 0 10px 10px 10px;
+    }
+}
