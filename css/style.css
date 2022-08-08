@@ -31,18 +31,11 @@ nav > a img {
 }
 
 main {
-    /* height: 1280px; */
     background: #fff url("../img/bg.jpg") repeat-x;
 }
 
 main .container {
     padding: 20px 0 0 0;
-}
-
-main::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 #img_main {
@@ -68,9 +61,13 @@ hr {
     padding: 20px 0;
 }
 
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .col {
-    width: 33.33%;
-    float: left;
     padding: 20px 10px;
 }
 
@@ -113,6 +110,31 @@ p {
     float: right;
 }
 
+.col_item {
+    margin-bottom: 40px;
+}
+
+.bb {
+    margin: 9px 0 13px 0;
+    border-bottom: 1px dotted #d3d3d3;
+}
+
+#bold {
+    font: bold 1.1em/14px Gill Sans;
+    color: #444;
+}
+
+.inp {
+    max-width: 294px;
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    padding: 11px 0 10px 13px;
+    margin: 12px 0 11px 0;
+}
+
+
+
 footer {
     height: 173px;
     border-top: 10px solid #4c4c4c;
@@ -134,4 +156,12 @@ footer {
         border-left: 1px dotted #d6d6d6;
         padding: 0 10px 10px 10px;
     }
+    .col {
+        width: 33.33%;
+        float: left;
+    }
+    .col_item {
+        padding: 20px 0;
+    }
+    
 }
