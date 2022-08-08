@@ -2,7 +2,7 @@
     max-width: 940px;
     margin: auto;
 }
-
+/*  header  */
 header {
     min-height: 137px;
     padding: 35px 0;
@@ -29,6 +29,11 @@ nav ul li a {
 nav > a img {
     width: 25%;
 }
+
+
+/* end */
+
+/* main */
 
 main {
     background: #fff url("../img/bg.jpg") repeat-x;
@@ -89,6 +94,10 @@ h6 {
     margin: 16px 0;
 }
 
+.col_item h2 {
+    color: #444;
+}
+
 p {
     font: .81em/18px Helvetica;
     color: #3e3e3e;
@@ -110,8 +119,9 @@ p {
     float: right;
 }
 
-.col_item {
-    margin-bottom: 40px;
+.col_item p {
+    font: .75em/14px Helvetica;
+    color: #444;
 }
 
 .bb {
@@ -128,17 +138,83 @@ p {
     max-width: 294px;
     width: 100%;
     border: 1px solid #cfcfcf;
+    color: #d4d4d4;
     border-radius: 3px;
     padding: 11px 0 10px 13px;
-    margin: 12px 0 11px 0;
 }
 
+.btn2 {
+    font: .81em Georgia;
+    color: #fff;
+    background: linear-gradient(to right, #4e87bf, #4e83bc, #3870aa, #2f6294, #2f6192);
+    border: 1px solid #004a80;
+    padding: 12px;
+    border-radius: 3px;
+    width: 163px;
+    text-align: left;
+    margin-top: 20px;
+    display: block;
+}
 
+.btn2 span {
+    float: right;
+}
+
+#form > input, #form > textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 17px;
+    color: #d4d4d4;
+    border: 1px solid #cfcfcf;
+    background: #fff;
+    border-radius: 3px;
+    padding: 11px 0 10px 13px;
+}
+
+#form > textarea {
+    height: 132px;
+}
+
+.col_item_info img {
+    margin: 0 8px 8px 0;
+    padding: 5px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    background: #f0f0f0;
+    float: left;
+}
+
+.col_item_info::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* end */
 
 footer {
-    height: 173px;
+    min-height: 173px;
     border-top: 10px solid #4c4c4c;
     background-color: #333;
+}
+
+#footer_nav li {
+    margin: 10px 0;
+}
+
+#footer_nav li a {
+    font: .68em Helvetica;
+    color: #999999;
+}
+
+.col-inline {
+    display: none;
+}
+
+.bb_info::after {
+	content: "";
+    clear: both;
+    display: table;
 }
 
 @media only screen and (min-width: 768px) {
@@ -160,8 +236,25 @@ footer {
         width: 33.33%;
         float: left;
     }
-    .col_item {
-        padding: 20px 0;
+    .social_icon {
+        padding: 0 0 20px 0;
+        margin: 0 12px 0 0;
     }
-    
+    .col-inline {
+        display: block;
+    }
+    #footer_nav li {
+        display: inline-block;
+        border-right: 1px solid #d4d4d4;
+        padding-right: 4px;
+    }
+    #footer_nav li:last-child {
+        border: none
+    }
+    .btn2 {
+        margin: 0;
+    }
+    .inp {
+        margin-bottom: 14px;
+    }
 }
