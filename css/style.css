@@ -44,10 +44,10 @@ main .container {
 }
 
 #img_main {
-    background: url(../img/image.jpg) no-repeat center;
     border: 1px solid #c6c6c6;
     border-radius: 7px;
     height: 342px;
+    transition: all 1s ease;
 }
 
 h1 {
